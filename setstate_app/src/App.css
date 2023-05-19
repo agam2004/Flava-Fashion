@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+h1.home_topic {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-shadow: 5px 1px ;
+}
+
+div.summer-carousel {
+  margin-top:45%;
+}
+
+div.first-slide-summer {
+  border: 5px solid none;
+  border-radius: 5px;
+  width: 20rem;
+  margin-right: 100px;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+
+div.social-icons {
+    margin: -1.7rem auto 3rem 5rem;
+}
+h5.social-navigate {
+  margin: 16rem 17rem 0.1rem auto;
+}
+
+img.summer-sale-post {
+  border-radius: 5.5px;
+  height: 22rem;
+  width: 99.9%;
+
+}
+
+#logo {
+  height: 3rem;
+  width: 3rem;
+  margin: 3px;
+}
+
+.navlinks {
+  margin-left: 2rem;
+}
+
+img.product {
+  height: 20rem;
+  width: 19rem;
+}
+
+a.summer-links {
+  color: black;
+}
+
+.icons-margin {
+  margin: 0.5rem;
+}
