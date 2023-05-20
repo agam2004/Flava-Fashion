@@ -1,6 +1,10 @@
 import { Facebook, Instagram, Tiktok, Pinterest, Youtube, Twitter, PinAngle } from "react-bootstrap-icons";
 
-export default function Home(){
+import { Link, Route, Routes } from 'react-router-dom';
+
+import { Sale } from './Sale';
+
+export function Home(){
     return(
         <div className="App">
         <h1 className="home_topic">Flava Fashion</h1>
@@ -9,7 +13,6 @@ export default function Home(){
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner summer-carousel">
     <div class="carousel-item active">
@@ -23,7 +26,7 @@ export default function Home(){
       <img src="https://img.freepik.com/free-psd/super-offer-creative-sale-banner-design-template_47987-13073.jpg?w=740&t=st=1684519758~exp=1684520358~hmac=e9f2177f36976b55bda26d99d1fe5a8c4938ff495ef0f52f00ec3ead3a3ffd40" className="d-block summer-sale-post" alt="..." />
       <div className="carousel-caption d-none d-md-block first-slide-summer">
         <h6>Last chance! Get up to 40% off</h6>
-        <a href="#" className="summer-links"><p>Use code: FLAVA40</p></a>
+        <Link to="/catalog/sale" className="summer-links"><p>Use code: FLAVA40</p></Link>
       </div>
     </div>
   </div>
@@ -61,6 +64,10 @@ export default function Home(){
         <Youtube className="icons-margin" />
         <Twitter className="icons-margin" />
     </div>
+
+    <Routes>
+        <Route path="/catalog/sale" element={<Sale />} />
+    </Routes>
     </div>
     )
 }
