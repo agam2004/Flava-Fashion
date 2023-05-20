@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link, Route, Routes } from 'react-router-dom';
 
-import { Home } from './Home'
+import Home from './Home'
 import { About } from './About';
 import { Contact } from './Contact';
 import  { Catalog } from './Catalog';
@@ -34,16 +34,16 @@ export default function Header() {
           <div className="collapse navbar-collapse navlinks" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                <Link className="nav-link active fw-bold" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="Flava/About_us">About us</Link>
+                <Link className="nav-link fw-bold" to="Flava/About_us">About us</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="Flava/Contact">Contact</Link>
+                <Link className="nav-link fw-bold" to="Flava/Contact">Contact</Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle" to="Flava/catalog" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle fw-bold" to="Flava/catalog" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Catalog
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,7 +66,7 @@ export default function Header() {
               </li>
             </ul>
             <form className="d-flex">
-              <input className="form-control me-2" type="search" placeholder="I am looking for..." aria-label="Search" />
+              <input className="form-control me-2" type="search" placeholder="I am looking for..." aria-label="Search"></input>
               <button className="btn btn-outline-secondary" type="submit">Search</button>
             </form>
           </div>
@@ -74,10 +74,10 @@ export default function Header() {
       </nav>
 
     <Routes>
-        <Route excat path="/" element={<Home />} />
-        <Route excat path="Flava/About_us" element={<About />} />
-        <Route excat path="Flava/Contact" element={<Contact />} />
-        <Route excat path="Flava/catalog" element={<Catalog />} />
+        <Route path="/" element={<Home />} />
+        <Route path="Flava/About_us" element={<About />} />
+        <Route path="Flava/Contact" element={<Contact />} />
+        <Route path="Flava/catalog" element={<Catalog />} />
 
         <Route path="/catalog/sale" element={<Sale />} />
         <Route path="/catalog/accessories" element={<Accessories />} />

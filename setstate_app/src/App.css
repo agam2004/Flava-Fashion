@@ -10,6 +10,9 @@ h1.home_topic {
 
 div.summer-carousel {
   margin-top:45%;
+  border-top: 8px solid rgb(249, 117, 249);
+  width: 99.8%;
+  height: 35rem;
 }
 
 div.first-slide-summer {
@@ -27,6 +30,13 @@ div.social-icons {
 }
 h5.social-navigate {
   margin: 16rem 17rem 0.1rem auto;
+  background: -webkit-linear-gradient(#5475bc, #d8b7b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span.carousel-navigation {
+  margin-bottom: 10rem;
 }
 
 img.summer-sale-post {
