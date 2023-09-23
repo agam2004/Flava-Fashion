@@ -15,6 +15,10 @@ div.summer-carousel {
   height: 35rem;
 }
 
+h6.code_coupon{ 
+  font-weight: bold;
+}
+
 div.first-slide-summer {
   border: 5px solid none;
   border-radius: 5px;

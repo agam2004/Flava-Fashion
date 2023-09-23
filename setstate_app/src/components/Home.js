@@ -23,10 +23,10 @@ export default function Home(){
       </div>
     </div>
     <div className="carousel-item">
-      <img src="https://img.freepik.com/free-psd/super-offer-creative-sale-banner-design-template_47987-13073.jpg?w=740&t=st=1684519758~exp=1684520358~hmac=e9f2177f36976b55bda26d99d1fe5a8c4938ff495ef0f52f00ec3ead3a3ffd40" className="d-block summer-sale-post" alt="..." />
+      <Link to='/'></Link><img src="https://img.freepik.com/free-psd/super-offer-creative-sale-banner-design-template_47987-13073.jpg?w=740&t=st=1684519758~exp=1684520358~hmac=e9f2177f36976b55bda26d99d1fe5a8c4938ff495ef0f52f00ec3ead3a3ffd40" className="d-block summer-sale-post" alt="..." />
       <div className="carousel-caption d-none d-md-block first-slide-summer">
         <h6>Last chance! Get up to 40% off</h6>
-        <Link to="/catalog/sale" className="summer-links"><p>Use code: FLAVA40</p></Link>
+        <Link to="/catalog/sale" className="summer-links"><h6 className="code_coupon">Use code: FLAVA40</h6></Link>
       </div>
     </div>
   </div>
@@ -67,6 +67,7 @@ export default function Home(){
 
     <Routes>
         <Route path="/catalog/sale" element={<Sale />} />
+        <Route path="/" element={<Home />} />
         <Route path="/catalog/sale" element={<Sale />} />
     </Routes>
     </div>

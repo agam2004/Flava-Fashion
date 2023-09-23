@@ -1,11 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+
+import { Person } from 'react-bootstrap-icons';
+
 import { Link, Route, Routes } from 'react-router-dom';
 
 import Home from './Home'
 import { About } from './About';
 import { Contact } from './Contact';
 import  { Catalog } from './Catalog';
+import { Login } from './Login';
 
 
 import  { Sale }  from './Sale';
@@ -20,7 +24,7 @@ import { Coats } from './clothes/coats';
 import { Hoodies } from './clothes/hoodies'
 
 
-export default function Header() {
+function Header() {
   return (
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -66,6 +70,9 @@ export default function Header() {
               </li>
             </ul>
             <form className="d-flex">
+              <li className="nav-item">
+                <Link className="nav-link fw-bold" to="Flava/Login"><Person /></Link>
+              </li>
               <input className="form-control me-2" type="search" placeholder="I am looking for..." aria-label="Search"></input>
               <button className="btn btn-outline-secondary" type="submit">Search</button>
             </form>
@@ -78,6 +85,7 @@ export default function Header() {
         <Route path="Flava/About_us" element={<About />} />
         <Route path="Flava/Contact" element={<Contact />} />
         <Route path="Flava/catalog" element={<Catalog />} />
+        <Route path="Flava/Login" element={<Login />} />
 
         <Route path="/catalog/sale" element={<Sale />} />
         <Route path="/catalog/accessories" element={<Accessories />} />
@@ -94,3 +102,4 @@ export default function Header() {
     </div>
   );
 }
+export default Header;
